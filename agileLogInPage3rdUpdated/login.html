@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="loginContainer">
+        <h2>Login Section</h2>
+
+        <form id="loginForm">
+            <label for="userName">Username</label>
+            <input type="text" id="userName" placeholder="Enter username">
+
+            <label for="userPassword">Password</label>
+            <input type="password" id="userPassword" placeholder="Enter password">
+
+            <div class="roleSelect">
+                <label>
+                    <input type="radio" name="role" value="user" checked>
+                    User
+                </label>
+                <label>
+                    <input type="radio" name="role" value="admin">
+                    Admin
+                </label>
+            </div>
+
+            <label class="rememberLabel">
+                <input type="checkbox" id="rememberMe"> Remember me
+            </label>
+
+            <button type="submit">Log in</button>
+            <p class="errorMessage" id="errorMessage"></p>
+
+            <p style="text-align:center; font-size:14px;">
+                Don't have an account?
+                <a href="createAccount.html">Create one</a>
+            </p>
+
+            <p style="text-align:center; font-size:14px;">
+                Forgot your password?
+                <a href="resetPassword.html">Reset here</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
